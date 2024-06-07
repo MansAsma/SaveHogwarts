@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/fonts">
+        <file>harryFont.ttf</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>dementor.png</file>
+        <file>harry.png</file>
+        <file>Hogwarts.png</file>
+        <file>Patronus.png</file>
+        <file>GameOver.png</file>
+        <file>HogwartsIsSaved.png</file>
+        <file>dementorsInHogwarts.png</file>
+        <file>harryDead.png</file>
+    </qresource>
+</RCC>
