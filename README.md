@@ -12,3 +12,5 @@ For now, here are the game rules:
     - Your score reflects the number of defeated Dementors. If the score reaches Max_Game_Score, Harry wins!
 # Game Demo:
 ![SaveHogwarts_GameDemo](https://github.com/MansAsma/SaveHogwarts/assets/77064769/afe6e8a3-2792-4945-a02c-0adf82ff9cff)
+
+If you want to try this simple game, download Release.rar folder and launch the MyQtGame.exe file within.
