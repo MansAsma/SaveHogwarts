@@ -61,7 +61,7 @@ void Player::keyPressEvent(QKeyEvent* event)
 void Player::spawn()
 {
     Dementor* dementor = nullptr;
-    if(Max_Game_Score != HogwartsGame->getGameScore()->getScore())
+    if(0 < HogwartsGame->getGamePlayerHealth()->getPlayerHealth() && Max_Game_Score != HogwartsGame->getGameScore()->getScore())
     {
         // create dementor item
         dementor =new Dementor();

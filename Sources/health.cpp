@@ -21,11 +21,16 @@ Health::Health(QGraphicsTextItem* parent): QGraphicsTextItem(parent) {
 
 void Health::decresePlayerHealth()
 {
-    --playerHealth;
-    setPlainText(QString("Player Health: ")+ QString::number(playerHealth));
-
+    if(--playerHealth >=0)
+    {
+        setPlainText(QString("Player Health: ")+ QString::number(playerHealth));
+    }
 }
 int Health::getPlayerHealth() const noexcept
 {
     return playerHealth;
+}
+
+void Health::setHealth() noexcept{
+    playerHealth = 0;
 }

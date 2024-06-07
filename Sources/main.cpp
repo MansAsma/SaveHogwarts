@@ -21,14 +21,6 @@ Game* HogwartsGame;
 /*_____________________________ FUNCTIONS ______________________________________*/
 
 
-        /********************************************************
-         * SetCustomerFont function --                          *
-         * used to set a custom text font                       *
-         * Param:                                               *
-         * -- fileName : .ttf file path                         *
-         * -- size : font text size                             *
-         ********************************************************/
-
 void SetCustomerFont(QGraphicsTextItem* parent,const QString& fileName,int size)
 {
     int fontId = QFontDatabase::addApplicationFont(fileName);
@@ -54,6 +46,7 @@ void CheckAndQuit() {
         else
         {
             widgetMessageBox->setIconPixmap(QPixmap(":/images/dementorsInHogwarts.png"));
+            HogwartsGame->getGamePlayerHealth()->setHealth();
             widgetMessageBox->exec();
 
         }
